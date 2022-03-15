@@ -5,7 +5,7 @@ class Food {
     this.element = document.getElementById("food")!;
   }
 
-  // Define a method to get food coordinate
+  // Get food coordinate
   get X() {
     return this.element.offsetLeft;
   }
