@@ -12,7 +12,7 @@ class GameControl {
   constructor() {
     this.food = new Food();
     this.snake = new Snake();
-    this.scorePanel = new ScorePanel();
+    this.scorePanel = new ScorePanel(10, 5);
     this.init();
   }
 
@@ -70,17 +70,17 @@ class GameControl {
     this.isLive &&
       setTimeout(
         this.move.bind(this),
-        300 - (this.scorePanel.levelValue - 1) * 30
+        200 - (this.scorePanel.levelValue - 1) * 20
       );
   }
 
-  // -------------- Defination of checkEat function--------------
+  // -------------- Define a function to check if the snake eat the food--------------
   checkEat(X: number, Y: number) {
     if (X === this.food.X && Y === this.food.Y) {
-      console.log("111");
+      // console.log("[INFO] eat");
       this.food.change();
       this.scorePanel.addScore();
-      this.snake.addBodyLength();
+      this.snake.addBody();
     }
   }
 }
