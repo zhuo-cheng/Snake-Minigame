@@ -16,7 +16,7 @@ class GameControl {
     this.init();
   }
 
-  // --------------Game initialization, call for game start--------------
+  // Game initialization, call for game start
   init() {
     // Bind event of key pressing
     // (.bind() for setting "this" of GameControl object rather than document object when calling handler function)
@@ -30,7 +30,7 @@ class GameControl {
     this.direction = event.key;
   }
 
-  // -------------Snake movement--------------
+  // Snake movement
   move() {
     let X = this.snake.X;
     let Y = this.snake.Y;
@@ -54,10 +54,10 @@ class GameControl {
         break;
     }
 
-    // --------------Check if the snake eat food--------------
+    // Check if the snake eat food
     this.checkEat(X, Y);
 
-    // --------------Check if the snake is alive and if not, throw a alear info--------------
+    // Check if the snake is alive and if not, throw a alear info
     try {
       this.snake.X = X;
       this.snake.Y = Y;
@@ -74,7 +74,7 @@ class GameControl {
       );
   }
 
-  // -------------- Define a function to check if the snake eat the food--------------
+  //  Define a function to check if the snake eat the food
   checkEat(X: number, Y: number) {
     if (X === this.food.X && Y === this.food.Y) {
       // console.log("[INFO] eat");
