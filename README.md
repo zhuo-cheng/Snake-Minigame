@@ -13,10 +13,14 @@ A mini project for TypeScript coding practice.
 * Game Over: (1) Hit the wall (2) Hit the body itself.
 * The score of level-up and maximum of level can be set in GameControl Class.
 
+## Install Necessary Package
 
+```bash
+npm install
+```
 
 ## Run
 
 ```bash
 npm start
-```
+
