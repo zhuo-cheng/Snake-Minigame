@@ -1,6 +1,6 @@
 # Snake-Minigame
 
-A mini project for TypeScript coding practice.
+A mini course project for TypeScript coding practice.
 
 ## Game Interface
 
