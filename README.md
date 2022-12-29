@@ -1,4 +1,4 @@
-# Snake-Minigame
+# snake-minigame
 
 A mini course project for TypeScript coding practice.
 
